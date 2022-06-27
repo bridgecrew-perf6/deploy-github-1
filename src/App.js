@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ColumnLeft from './ColumnLeft'
+import ColumnRight from './ColumnRight'
+import './grid.css'
+import './style.css'
+// import styles from './styles/DefaultLayout.module.scss';
+// import classNames from 'classnames/bind';
+
+// const cx = classNames.bind(styles)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="grid wide boder">
+      <div className="row">
+        <ColumnLeft/>
+        <ColumnRight/>
+      </div>
     </div>
   );
 }
